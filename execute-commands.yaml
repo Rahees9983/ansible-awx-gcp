@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
-  gather_facts: true
+- hosts: instance-1-group
+  gather_facts: false
   tasks:
     - command: 'hostname'
