@@ -1,0 +1,11 @@
+plugin: google.cloud.gcp_compute
+zones: # populate inventory with instances in these regions
+  - us-central1-c
+projects:
+  - logical-cubist-348810
+#service_account_file: /tmp/service_account.json
+auth_kind: serviceaccount
+keyed_groups:
+  # Create groups from GCE labels
+  - prefix: gcp
+    key: labels
