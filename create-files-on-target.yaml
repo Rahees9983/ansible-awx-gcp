@@ -4,7 +4,6 @@
   #become: yes
   gather_facts: no
   tasks:
-  tasks:
   - name: Creating an empty file
     file:
       path: "/var/file-created-with-ansible-newww"
