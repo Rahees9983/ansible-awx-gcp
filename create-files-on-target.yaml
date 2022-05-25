@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: centos-vm1
+  hosts: centos-02-vm
   #become: yes
   gather_facts: no
   tasks:
