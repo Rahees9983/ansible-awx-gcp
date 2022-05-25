@@ -1,0 +1,8 @@
+plugin: gcp_compute
+include_vm_resource_groups:
+  - ansible-inventory-test-rg
+auth_source: auto
+conditional_groups:
+  linux: "'CentOS' in image.offer"
+  windows: "'WindowsServer' in image.offer"
+  development: "'env' in (labels|list)"
