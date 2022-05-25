@@ -1,7 +1,7 @@
 ---
 plugin: gcp_compute
 projects:
-  - devopscube-262115
+  - logical-cubist-348810
 auth_kind: serviceaccount
 service_account_file: /opt/ansible/inventory/service-account.json
 keyed_groups:
