@@ -1,4 +1,3 @@
----
 plugin: gcp_compute
 projects:
   - logical-cubist-348810
