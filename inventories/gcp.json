@@ -1,0 +1,22 @@
+{
+  "plugin": "gcp_compute",
+  "projects": [
+    "logical-cubist-348810"
+  ],
+  "auth_kind": "serviceaccount",
+  "service_account_file": "/opt/ansible/inventory/service-account.json",
+  "keyed_groups": [
+    {
+      "key": "labels",
+      "prefix": "label"
+    },
+    {
+      "key": "zone",
+      "prefix": "zone"
+    }
+  ],
+  "groups": {
+    "development": "'env' in (labels|list)",
+    "staging": "'jenkins' in name"
+  }
+}
